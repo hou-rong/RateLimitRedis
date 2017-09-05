@@ -13,7 +13,7 @@
 pip install rate-limit-redis
 ```
 
-
+## Example
 
 ``` python
 from gevent.monkey import patch_all
@@ -61,4 +61,3 @@ pool.join()
 - [ ] python3 支持
 - [ ] 使用时安装相关依赖
 - [ ] ...
-1
