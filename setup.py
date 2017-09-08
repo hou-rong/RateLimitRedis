@@ -7,10 +7,11 @@
 # @Software: PyCharm
 
 from setuptools import setup, find_packages
+from rate_limit_redis import __version__
 
 setup(
     name='rate-limit-redis',
-    version='0.1.0',
+    version=__version__,
     license='MIT',
     description="A python rate limit tools, which have good compatibility for redis and gevent",
     author='Henry Hou',
@@ -20,5 +21,7 @@ setup(
         'python-redis-lock',
     ],
     packages=find_packages(where='.', exclude=['']),
+    test_utils='test',
+    test_suite='test',
     zip_safe=False,
 )

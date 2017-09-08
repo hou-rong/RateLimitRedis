@@ -11,10 +11,8 @@ import functools
 import redis_lock
 
 from logging import getLogger
-from simple_redis import SimpleRedis
+from .simple_redis import SimpleRedis
 from redis_lock import AlreadyAcquired
-
-__version__ = "0.1.0"
 
 RETRY_TIMES = 10
 WAIT_TIME = 1

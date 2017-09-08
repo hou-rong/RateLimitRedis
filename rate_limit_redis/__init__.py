@@ -5,8 +5,10 @@
 # @Site    : 
 # @File    : __init__.py.py
 # @Software: PyCharm
+from .rate_limit_redis import RateLimitRedis
 
+__version__ = "0.1.1"
 
 __all__ = [
-    'rate_limited'
+    'rate_limit_redis'
 ]

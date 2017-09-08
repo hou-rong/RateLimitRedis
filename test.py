@@ -12,7 +12,7 @@ import gevent.pool
 
 pool = gevent.pool.Pool()
 
-from rate_limit_redis.rate_limit_redis import RateLimitRedis
+from rate_limit_redis import RateLimitRedis
 import redis
 import time
 
